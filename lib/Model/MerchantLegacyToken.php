@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ClearentTransactionsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,15 +26,15 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
-use \OpenAPI\Client\ObjectSerializer;
+namespace ClearentTransactionsApi\Model;
+use \ClearentTransactionsApi\ObjectSerializer;
 
 /**
  * MerchantLegacyToken Class Doc Comment
  *
  * @category Class
  * @description True if you would like to use a legacy token in your transaction request. Optional on an AUTH or SALE.
- * @package  OpenAPI\Client
+ * @package  ClearentTransactionsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

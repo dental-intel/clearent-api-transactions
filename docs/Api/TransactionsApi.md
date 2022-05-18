@@ -1,4 +1,4 @@
-# OpenAPI\Client\TransactionsApi
+# ClearentTransactionsApi\TransactionsApi
 
 All URIs are relative to https://gateway-sb.clearent.net.
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 ## `refundTransaction()`
 
 ```php
-refundTransaction($refund_transaction_payload): \OpenAPI\Client\Model\SingleTransactionResponse
+refundTransaction($refund_transaction_payload): \ClearentTransactionsApi\Model\SingleTransactionResponse
 ```
 
 
@@ -25,18 +25,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api-key', 'YOUR_API_KEY');
+$config = ClearentTransactionsApi\Configuration::getDefaultConfiguration()->setApiKey('api-key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api-key', 'Bearer');
+// $config = ClearentTransactionsApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api-key', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\TransactionsApi(
+$apiInstance = new ClearentTransactionsApi\Api\TransactionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$refund_transaction_payload = new \OpenAPI\Client\Model\RefundTransactionPayload(); // \OpenAPI\Client\Model\RefundTransactionPayload
+$refund_transaction_payload = new \ClearentTransactionsApi\Model\RefundTransactionPayload(); // \ClearentTransactionsApi\Model\RefundTransactionPayload
 
 try {
     $result = $apiInstance->refundTransaction($refund_transaction_payload);
@@ -50,11 +50,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **refund_transaction_payload** | [**\OpenAPI\Client\Model\RefundTransactionPayload**](../Model/RefundTransactionPayload.md)|  | [optional]
+ **refund_transaction_payload** | [**\ClearentTransactionsApi\Model\RefundTransactionPayload**](../Model/RefundTransactionPayload.md)|  | [optional]
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SingleTransactionResponse**](../Model/SingleTransactionResponse.md)
+[**\ClearentTransactionsApi\Model\SingleTransactionResponse**](../Model/SingleTransactionResponse.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ Name | Type | Description  | Notes
 ## `saleTransaction()`
 
 ```php
-saleTransaction($sale_transaction_payload): \OpenAPI\Client\Model\SingleTransactionResponse
+saleTransaction($sale_transaction_payload): \ClearentTransactionsApi\Model\SingleTransactionResponse
 ```
 
 
@@ -85,18 +85,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api-key', 'YOUR_API_KEY');
+$config = ClearentTransactionsApi\Configuration::getDefaultConfiguration()->setApiKey('api-key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api-key', 'Bearer');
+// $config = ClearentTransactionsApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api-key', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\TransactionsApi(
+$apiInstance = new ClearentTransactionsApi\Api\TransactionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$sale_transaction_payload = new \OpenAPI\Client\Model\SaleTransactionPayload(); // \OpenAPI\Client\Model\SaleTransactionPayload
+$sale_transaction_payload = new \ClearentTransactionsApi\Model\SaleTransactionPayload(); // \ClearentTransactionsApi\Model\SaleTransactionPayload
 
 try {
     $result = $apiInstance->saleTransaction($sale_transaction_payload);
@@ -110,11 +110,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **sale_transaction_payload** | [**\OpenAPI\Client\Model\SaleTransactionPayload**](../Model/SaleTransactionPayload.md)|  | [optional]
+ **sale_transaction_payload** | [**\ClearentTransactionsApi\Model\SaleTransactionPayload**](../Model/SaleTransactionPayload.md)|  | [optional]
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SingleTransactionResponse**](../Model/SingleTransactionResponse.md)
+[**\ClearentTransactionsApi\Model\SingleTransactionResponse**](../Model/SingleTransactionResponse.md)
 
 ### Authorization
 
@@ -132,7 +132,7 @@ Name | Type | Description  | Notes
 ## `searchTransactions()`
 
 ```php
-searchTransactions($amount, $authorization_code, $display_message, $end_date, $id, $invoice, $is_descending, $last_four, $level, $order_id, $page_size, $page, $start_date, $status, $type): \OpenAPI\Client\Model\SearchTransactionResponse
+searchTransactions($amount, $authorization_code, $display_message, $end_date, $id, $invoice, $is_descending, $last_four, $level, $order_id, $page_size, $page, $start_date, $status, $type): \ClearentTransactionsApi\Model\SearchTransactionResponse
 ```
 
 
@@ -145,12 +145,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api-key', 'YOUR_API_KEY');
+$config = ClearentTransactionsApi\Configuration::getDefaultConfiguration()->setApiKey('api-key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api-key', 'Bearer');
+// $config = ClearentTransactionsApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api-key', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\TransactionsApi(
+$apiInstance = new ClearentTransactionsApi\Api\TransactionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SearchTransactionResponse**](../Model/SearchTransactionResponse.md)
+[**\ClearentTransactionsApi\Model\SearchTransactionResponse**](../Model/SearchTransactionResponse.md)
 
 ### Authorization
 

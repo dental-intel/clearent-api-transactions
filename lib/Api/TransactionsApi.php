@@ -4,7 +4,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ClearentTransactionsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace ClearentTransactionsApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use ClearentTransactionsApi\ApiException;
+use ClearentTransactionsApi\Configuration;
+use ClearentTransactionsApi\HeaderSelector;
+use ClearentTransactionsApi\ObjectSerializer;
 
 /**
  * TransactionsApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ClearentTransactionsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -118,11 +118,11 @@ class TransactionsApi
     /**
      * Operation refundTransaction
      *
-     * @param  \OpenAPI\Client\Model\RefundTransactionPayload $refund_transaction_payload refund_transaction_payload (optional)
+     * @param  \ClearentTransactionsApi\Model\RefundTransactionPayload $refund_transaction_payload refund_transaction_payload (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \ClearentTransactionsApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\SingleTransactionResponse
+     * @return \ClearentTransactionsApi\Model\SingleTransactionResponse
      */
     public function refundTransaction($refund_transaction_payload = null)
     {
@@ -133,11 +133,11 @@ class TransactionsApi
     /**
      * Operation refundTransactionWithHttpInfo
      *
-     * @param  \OpenAPI\Client\Model\RefundTransactionPayload $refund_transaction_payload (optional)
+     * @param  \ClearentTransactionsApi\Model\RefundTransactionPayload $refund_transaction_payload (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \ClearentTransactionsApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\SingleTransactionResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ClearentTransactionsApi\Model\SingleTransactionResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function refundTransactionWithHttpInfo($refund_transaction_payload = null)
     {
@@ -180,23 +180,23 @@ class TransactionsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\SingleTransactionResponse' === '\SplFileObject') {
+                    if ('\ClearentTransactionsApi\Model\SingleTransactionResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\SingleTransactionResponse' !== 'string') {
+                        if ('\ClearentTransactionsApi\Model\SingleTransactionResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\SingleTransactionResponse', []),
+                        ObjectSerializer::deserialize($content, '\ClearentTransactionsApi\Model\SingleTransactionResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\SingleTransactionResponse';
+            $returnType = '\ClearentTransactionsApi\Model\SingleTransactionResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -217,7 +217,7 @@ class TransactionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\SingleTransactionResponse',
+                        '\ClearentTransactionsApi\Model\SingleTransactionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -230,7 +230,7 @@ class TransactionsApi
     /**
      * Operation refundTransactionAsync
      *
-     * @param  \OpenAPI\Client\Model\RefundTransactionPayload $refund_transaction_payload (optional)
+     * @param  \ClearentTransactionsApi\Model\RefundTransactionPayload $refund_transaction_payload (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -248,14 +248,14 @@ class TransactionsApi
     /**
      * Operation refundTransactionAsyncWithHttpInfo
      *
-     * @param  \OpenAPI\Client\Model\RefundTransactionPayload $refund_transaction_payload (optional)
+     * @param  \ClearentTransactionsApi\Model\RefundTransactionPayload $refund_transaction_payload (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function refundTransactionAsyncWithHttpInfo($refund_transaction_payload = null)
     {
-        $returnType = '\OpenAPI\Client\Model\SingleTransactionResponse';
+        $returnType = '\ClearentTransactionsApi\Model\SingleTransactionResponse';
         $request = $this->refundTransactionRequest($refund_transaction_payload);
 
         return $this->client
@@ -297,7 +297,7 @@ class TransactionsApi
     /**
      * Create request for operation 'refundTransaction'
      *
-     * @param  \OpenAPI\Client\Model\RefundTransactionPayload $refund_transaction_payload (optional)
+     * @param  \ClearentTransactionsApi\Model\RefundTransactionPayload $refund_transaction_payload (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -387,11 +387,11 @@ class TransactionsApi
     /**
      * Operation saleTransaction
      *
-     * @param  \OpenAPI\Client\Model\SaleTransactionPayload $sale_transaction_payload sale_transaction_payload (optional)
+     * @param  \ClearentTransactionsApi\Model\SaleTransactionPayload $sale_transaction_payload sale_transaction_payload (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \ClearentTransactionsApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\SingleTransactionResponse
+     * @return \ClearentTransactionsApi\Model\SingleTransactionResponse
      */
     public function saleTransaction($sale_transaction_payload = null)
     {
@@ -402,11 +402,11 @@ class TransactionsApi
     /**
      * Operation saleTransactionWithHttpInfo
      *
-     * @param  \OpenAPI\Client\Model\SaleTransactionPayload $sale_transaction_payload (optional)
+     * @param  \ClearentTransactionsApi\Model\SaleTransactionPayload $sale_transaction_payload (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \ClearentTransactionsApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\SingleTransactionResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ClearentTransactionsApi\Model\SingleTransactionResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function saleTransactionWithHttpInfo($sale_transaction_payload = null)
     {
@@ -449,23 +449,23 @@ class TransactionsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\SingleTransactionResponse' === '\SplFileObject') {
+                    if ('\ClearentTransactionsApi\Model\SingleTransactionResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\SingleTransactionResponse' !== 'string') {
+                        if ('\ClearentTransactionsApi\Model\SingleTransactionResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\SingleTransactionResponse', []),
+                        ObjectSerializer::deserialize($content, '\ClearentTransactionsApi\Model\SingleTransactionResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\SingleTransactionResponse';
+            $returnType = '\ClearentTransactionsApi\Model\SingleTransactionResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -486,7 +486,7 @@ class TransactionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\SingleTransactionResponse',
+                        '\ClearentTransactionsApi\Model\SingleTransactionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -499,7 +499,7 @@ class TransactionsApi
     /**
      * Operation saleTransactionAsync
      *
-     * @param  \OpenAPI\Client\Model\SaleTransactionPayload $sale_transaction_payload (optional)
+     * @param  \ClearentTransactionsApi\Model\SaleTransactionPayload $sale_transaction_payload (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -517,14 +517,14 @@ class TransactionsApi
     /**
      * Operation saleTransactionAsyncWithHttpInfo
      *
-     * @param  \OpenAPI\Client\Model\SaleTransactionPayload $sale_transaction_payload (optional)
+     * @param  \ClearentTransactionsApi\Model\SaleTransactionPayload $sale_transaction_payload (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function saleTransactionAsyncWithHttpInfo($sale_transaction_payload = null)
     {
-        $returnType = '\OpenAPI\Client\Model\SingleTransactionResponse';
+        $returnType = '\ClearentTransactionsApi\Model\SingleTransactionResponse';
         $request = $this->saleTransactionRequest($sale_transaction_payload);
 
         return $this->client
@@ -566,7 +566,7 @@ class TransactionsApi
     /**
      * Create request for operation 'saleTransaction'
      *
-     * @param  \OpenAPI\Client\Model\SaleTransactionPayload $sale_transaction_payload (optional)
+     * @param  \ClearentTransactionsApi\Model\SaleTransactionPayload $sale_transaction_payload (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -672,9 +672,9 @@ class TransactionsApi
      * @param  string $status status (optional)
      * @param  string $type The type of transaction. (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \ClearentTransactionsApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\SearchTransactionResponse
+     * @return \ClearentTransactionsApi\Model\SearchTransactionResponse
      */
     public function searchTransactions($amount = null, $authorization_code = null, $display_message = null, $end_date = null, $id = null, $invoice = null, $is_descending = 'true', $last_four = null, $level = 'terminal', $order_id = null, $page_size = null, $page = null, $start_date = null, $status = null, $type = null)
     {
@@ -701,9 +701,9 @@ class TransactionsApi
      * @param  string $status (optional)
      * @param  string $type The type of transaction. (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \ClearentTransactionsApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\SearchTransactionResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ClearentTransactionsApi\Model\SearchTransactionResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function searchTransactionsWithHttpInfo($amount = null, $authorization_code = null, $display_message = null, $end_date = null, $id = null, $invoice = null, $is_descending = 'true', $last_four = null, $level = 'terminal', $order_id = null, $page_size = null, $page = null, $start_date = null, $status = null, $type = null)
     {
@@ -746,23 +746,23 @@ class TransactionsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\SearchTransactionResponse' === '\SplFileObject') {
+                    if ('\ClearentTransactionsApi\Model\SearchTransactionResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\SearchTransactionResponse' !== 'string') {
+                        if ('\ClearentTransactionsApi\Model\SearchTransactionResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\SearchTransactionResponse', []),
+                        ObjectSerializer::deserialize($content, '\ClearentTransactionsApi\Model\SearchTransactionResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\SearchTransactionResponse';
+            $returnType = '\ClearentTransactionsApi\Model\SearchTransactionResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -783,7 +783,7 @@ class TransactionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\SearchTransactionResponse',
+                        '\ClearentTransactionsApi\Model\SearchTransactionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -849,7 +849,7 @@ class TransactionsApi
      */
     public function searchTransactionsAsyncWithHttpInfo($amount = null, $authorization_code = null, $display_message = null, $end_date = null, $id = null, $invoice = null, $is_descending = 'true', $last_four = null, $level = 'terminal', $order_id = null, $page_size = null, $page = null, $start_date = null, $status = null, $type = null)
     {
-        $returnType = '\OpenAPI\Client\Model\SearchTransactionResponse';
+        $returnType = '\ClearentTransactionsApi\Model\SearchTransactionResponse';
         $request = $this->searchTransactionsRequest($amount, $authorization_code, $display_message, $end_date, $id, $invoice, $is_descending, $last_four, $level, $order_id, $page_size, $page, $start_date, $status, $type);
 
         return $this->client

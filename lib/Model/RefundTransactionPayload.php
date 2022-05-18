@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ClearentTransactionsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace ClearentTransactionsApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \ClearentTransactionsApi\ObjectSerializer;
 
 /**
  * RefundTransactionPayload Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ClearentTransactionsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -60,47 +60,47 @@ class RefundTransactionPayload implements ModelInterface, ArrayAccess, \JsonSeri
       */
     protected static $openAPITypes = [
         'amount' => 'string',
-        'billing' => '\OpenAPI\Client\Model\Address',
-        'billing_is_shipping' => '\OpenAPI\Client\Model\BillingIsShipping',
+        'billing' => '\ClearentTransactionsApi\Model\Address',
+        'billing_is_shipping' => '\ClearentTransactionsApi\Model\BillingIsShipping',
         'card' => 'string',
         'card_inquiry' => 'bool',
         'cash_back_amount' => 'string',
-        'check_field' => '\OpenAPI\Client\Model\CheckField',
+        'check_field' => '\ClearentTransactionsApi\Model\CheckField',
         'check_field_mid' => 'bool',
         'client_ip' => 'string',
         'comments' => 'string',
-        'contactless' => '\OpenAPI\Client\Model\Contactless',
-        'contactless_device' => '\OpenAPI\Client\Model\ContactlessDevice',
-        'create_token' => '\OpenAPI\Client\Model\CreateToken',
+        'contactless' => '\ClearentTransactionsApi\Model\Contactless',
+        'contactless_device' => '\ClearentTransactionsApi\Model\ContactlessDevice',
+        'create_token' => '\ClearentTransactionsApi\Model\CreateToken',
         'csc' => 'string',
         'customer_id' => 'string',
-        'cvm' => '\OpenAPI\Client\Model\Cvm',
+        'cvm' => '\ClearentTransactionsApi\Model\Cvm',
         'description' => 'string',
         'email_address' => 'string',
-        'email_receipt' => '\OpenAPI\Client\Model\EmailReceipt',
+        'email_receipt' => '\ClearentTransactionsApi\Model\EmailReceipt',
         'emv_data' => 'string',
-        'emv_entry_method' => '\OpenAPI\Client\Model\EmvEntryMethod',
+        'emv_entry_method' => '\ClearentTransactionsApi\Model\EmvEntryMethod',
         'encrypted_track_data' => 'string',
         'exp_date' => 'string',
         'id' => 'string',
         'invoice' => 'string',
         'is_sp30' => 'bool',
         'key_serial_number' => 'string',
-        'level3' => '\OpenAPI\Client\Model\ClearentLevel3',
-        'merchant_legacy_token' => '\OpenAPI\Client\Model\MerchantLegacyToken',
+        'level3' => '\ClearentTransactionsApi\Model\ClearentLevel3',
+        'merchant_legacy_token' => '\ClearentTransactionsApi\Model\MerchantLegacyToken',
         'order_id' => 'string',
         'partial_authorization' => 'bool',
         'pin_data' => 'string',
-        'platform_fees' => '\OpenAPI\Client\Model\PlatformFee[]',
+        'platform_fees' => '\ClearentTransactionsApi\Model\PlatformFee[]',
         'purchase_order' => 'string',
         'sales_tax_amount' => 'string',
-        'sales_tax_type' => '\OpenAPI\Client\Model\SalesTaxType',
-        'shipping' => '\OpenAPI\Client\Model\Address',
+        'sales_tax_type' => '\ClearentTransactionsApi\Model\SalesTaxType',
+        'shipping' => '\ClearentTransactionsApi\Model\Address',
         'software_type' => 'string',
         'software_type_version' => 'string',
         'tip_amount' => 'string',
         'token_description' => 'string',
-        'type' => '\OpenAPI\Client\Model\TypeRefundTransaction',
+        'type' => '\ClearentTransactionsApi\Model\TypeRefundTransaction',
         'voucher_approval_code' => 'string',
         'voucher_serial_number' => 'string'
     ];
@@ -503,7 +503,7 @@ class RefundTransactionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets billing
      *
-     * @return \OpenAPI\Client\Model\Address|null
+     * @return \ClearentTransactionsApi\Model\Address|null
      */
     public function getBilling()
     {
@@ -513,7 +513,7 @@ class RefundTransactionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets billing
      *
-     * @param \OpenAPI\Client\Model\Address|null $billing billing
+     * @param \ClearentTransactionsApi\Model\Address|null $billing billing
      *
      * @return self
      */
@@ -527,7 +527,7 @@ class RefundTransactionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets billing_is_shipping
      *
-     * @return \OpenAPI\Client\Model\BillingIsShipping|null
+     * @return \ClearentTransactionsApi\Model\BillingIsShipping|null
      */
     public function getBillingIsShipping()
     {
@@ -537,7 +537,7 @@ class RefundTransactionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets billing_is_shipping
      *
-     * @param \OpenAPI\Client\Model\BillingIsShipping|null $billing_is_shipping billing_is_shipping
+     * @param \ClearentTransactionsApi\Model\BillingIsShipping|null $billing_is_shipping billing_is_shipping
      *
      * @return self
      */
@@ -623,7 +623,7 @@ class RefundTransactionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets check_field
      *
-     * @return \OpenAPI\Client\Model\CheckField|null
+     * @return \ClearentTransactionsApi\Model\CheckField|null
      */
     public function getCheckField()
     {
@@ -633,7 +633,7 @@ class RefundTransactionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets check_field
      *
-     * @param \OpenAPI\Client\Model\CheckField|null $check_field check_field
+     * @param \ClearentTransactionsApi\Model\CheckField|null $check_field check_field
      *
      * @return self
      */
@@ -719,7 +719,7 @@ class RefundTransactionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets contactless
      *
-     * @return \OpenAPI\Client\Model\Contactless|null
+     * @return \ClearentTransactionsApi\Model\Contactless|null
      */
     public function getContactless()
     {
@@ -729,7 +729,7 @@ class RefundTransactionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets contactless
      *
-     * @param \OpenAPI\Client\Model\Contactless|null $contactless contactless
+     * @param \ClearentTransactionsApi\Model\Contactless|null $contactless contactless
      *
      * @return self
      */
@@ -743,7 +743,7 @@ class RefundTransactionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets contactless_device
      *
-     * @return \OpenAPI\Client\Model\ContactlessDevice|null
+     * @return \ClearentTransactionsApi\Model\ContactlessDevice|null
      */
     public function getContactlessDevice()
     {
@@ -753,7 +753,7 @@ class RefundTransactionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets contactless_device
      *
-     * @param \OpenAPI\Client\Model\ContactlessDevice|null $contactless_device contactless_device
+     * @param \ClearentTransactionsApi\Model\ContactlessDevice|null $contactless_device contactless_device
      *
      * @return self
      */
@@ -767,7 +767,7 @@ class RefundTransactionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets create_token
      *
-     * @return \OpenAPI\Client\Model\CreateToken|null
+     * @return \ClearentTransactionsApi\Model\CreateToken|null
      */
     public function getCreateToken()
     {
@@ -777,7 +777,7 @@ class RefundTransactionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets create_token
      *
-     * @param \OpenAPI\Client\Model\CreateToken|null $create_token create_token
+     * @param \ClearentTransactionsApi\Model\CreateToken|null $create_token create_token
      *
      * @return self
      */
@@ -839,7 +839,7 @@ class RefundTransactionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets cvm
      *
-     * @return \OpenAPI\Client\Model\Cvm|null
+     * @return \ClearentTransactionsApi\Model\Cvm|null
      */
     public function getCvm()
     {
@@ -849,7 +849,7 @@ class RefundTransactionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets cvm
      *
-     * @param \OpenAPI\Client\Model\Cvm|null $cvm cvm
+     * @param \ClearentTransactionsApi\Model\Cvm|null $cvm cvm
      *
      * @return self
      */
@@ -911,7 +911,7 @@ class RefundTransactionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets email_receipt
      *
-     * @return \OpenAPI\Client\Model\EmailReceipt|null
+     * @return \ClearentTransactionsApi\Model\EmailReceipt|null
      */
     public function getEmailReceipt()
     {
@@ -921,7 +921,7 @@ class RefundTransactionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets email_receipt
      *
-     * @param \OpenAPI\Client\Model\EmailReceipt|null $email_receipt email_receipt
+     * @param \ClearentTransactionsApi\Model\EmailReceipt|null $email_receipt email_receipt
      *
      * @return self
      */
@@ -959,7 +959,7 @@ class RefundTransactionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets emv_entry_method
      *
-     * @return \OpenAPI\Client\Model\EmvEntryMethod|null
+     * @return \ClearentTransactionsApi\Model\EmvEntryMethod|null
      */
     public function getEmvEntryMethod()
     {
@@ -969,7 +969,7 @@ class RefundTransactionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets emv_entry_method
      *
-     * @param \OpenAPI\Client\Model\EmvEntryMethod|null $emv_entry_method emv_entry_method
+     * @param \ClearentTransactionsApi\Model\EmvEntryMethod|null $emv_entry_method emv_entry_method
      *
      * @return self
      */
@@ -1127,7 +1127,7 @@ class RefundTransactionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets level3
      *
-     * @return \OpenAPI\Client\Model\ClearentLevel3|null
+     * @return \ClearentTransactionsApi\Model\ClearentLevel3|null
      */
     public function getLevel3()
     {
@@ -1137,7 +1137,7 @@ class RefundTransactionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets level3
      *
-     * @param \OpenAPI\Client\Model\ClearentLevel3|null $level3 level3
+     * @param \ClearentTransactionsApi\Model\ClearentLevel3|null $level3 level3
      *
      * @return self
      */
@@ -1151,7 +1151,7 @@ class RefundTransactionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets merchant_legacy_token
      *
-     * @return \OpenAPI\Client\Model\MerchantLegacyToken|null
+     * @return \ClearentTransactionsApi\Model\MerchantLegacyToken|null
      */
     public function getMerchantLegacyToken()
     {
@@ -1161,7 +1161,7 @@ class RefundTransactionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets merchant_legacy_token
      *
-     * @param \OpenAPI\Client\Model\MerchantLegacyToken|null $merchant_legacy_token merchant_legacy_token
+     * @param \ClearentTransactionsApi\Model\MerchantLegacyToken|null $merchant_legacy_token merchant_legacy_token
      *
      * @return self
      */
@@ -1247,7 +1247,7 @@ class RefundTransactionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets platform_fees
      *
-     * @return \OpenAPI\Client\Model\PlatformFee[]|null
+     * @return \ClearentTransactionsApi\Model\PlatformFee[]|null
      */
     public function getPlatformFees()
     {
@@ -1257,7 +1257,7 @@ class RefundTransactionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets platform_fees
      *
-     * @param \OpenAPI\Client\Model\PlatformFee[]|null $platform_fees True if the batch was settled.
+     * @param \ClearentTransactionsApi\Model\PlatformFee[]|null $platform_fees True if the batch was settled.
      *
      * @return self
      */
@@ -1323,7 +1323,7 @@ class RefundTransactionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets sales_tax_type
      *
-     * @return \OpenAPI\Client\Model\SalesTaxType|null
+     * @return \ClearentTransactionsApi\Model\SalesTaxType|null
      */
     public function getSalesTaxType()
     {
@@ -1333,7 +1333,7 @@ class RefundTransactionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets sales_tax_type
      *
-     * @param \OpenAPI\Client\Model\SalesTaxType|null $sales_tax_type sales_tax_type
+     * @param \ClearentTransactionsApi\Model\SalesTaxType|null $sales_tax_type sales_tax_type
      *
      * @return self
      */
@@ -1347,7 +1347,7 @@ class RefundTransactionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets shipping
      *
-     * @return \OpenAPI\Client\Model\Address|null
+     * @return \ClearentTransactionsApi\Model\Address|null
      */
     public function getShipping()
     {
@@ -1357,7 +1357,7 @@ class RefundTransactionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets shipping
      *
-     * @param \OpenAPI\Client\Model\Address|null $shipping shipping
+     * @param \ClearentTransactionsApi\Model\Address|null $shipping shipping
      *
      * @return self
      */
@@ -1467,7 +1467,7 @@ class RefundTransactionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets type
      *
-     * @return \OpenAPI\Client\Model\TypeRefundTransaction
+     * @return \ClearentTransactionsApi\Model\TypeRefundTransaction
      */
     public function getType()
     {
@@ -1477,7 +1477,7 @@ class RefundTransactionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets type
      *
-     * @param \OpenAPI\Client\Model\TypeRefundTransaction $type type
+     * @param \ClearentTransactionsApi\Model\TypeRefundTransaction $type type
      *
      * @return self
      */

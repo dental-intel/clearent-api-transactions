@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ClearentTransactionsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace OpenAPI\Client\Test\Model;
+namespace ClearentTransactionsApi\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -35,7 +35,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description True if you would like to email a receipt. If true, &#x60;email-address&#x60; is required.
- * @package     OpenAPI\Client
+ * @package     ClearentTransactionsApi
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

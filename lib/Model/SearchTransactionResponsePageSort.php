@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ClearentTransactionsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace ClearentTransactionsApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \ClearentTransactionsApi\ObjectSerializer;
 
 /**
  * SearchTransactionResponsePageSort Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ClearentTransactionsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -59,7 +59,7 @@ class SearchTransactionResponsePageSort implements ModelInterface, ArrayAccess, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'field' => '\OpenAPI\Client\Model\SearchTransactionResponsePageSortField'
+        'field' => '\ClearentTransactionsApi\Model\SearchTransactionResponsePageSortField'
     ];
 
     /**
@@ -208,7 +208,7 @@ class SearchTransactionResponsePageSort implements ModelInterface, ArrayAccess, 
     /**
      * Gets field
      *
-     * @return \OpenAPI\Client\Model\SearchTransactionResponsePageSortField|null
+     * @return \ClearentTransactionsApi\Model\SearchTransactionResponsePageSortField|null
      */
     public function getField()
     {
@@ -218,7 +218,7 @@ class SearchTransactionResponsePageSort implements ModelInterface, ArrayAccess, 
     /**
      * Sets field
      *
-     * @param \OpenAPI\Client\Model\SearchTransactionResponsePageSortField|null $field field
+     * @param \ClearentTransactionsApi\Model\SearchTransactionResponsePageSortField|null $field field
      *
      * @return self
      */

@@ -50,18 +50,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api-key', 'YOUR_API_KEY');
+$config = ClearentTransactionsApi\Configuration::getDefaultConfiguration()->setApiKey('api-key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api-key', 'Bearer');
+// $config = ClearentTransactionsApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api-key', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\TransactionsApi(
+$apiInstance = new ClearentTransactionsApi\Api\TransactionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$refund_transaction_payload = new \OpenAPI\Client\Model\RefundTransactionPayload(); // \OpenAPI\Client\Model\RefundTransactionPayload
+$refund_transaction_payload = new \ClearentTransactionsApi\Model\RefundTransactionPayload(); // \ClearentTransactionsApi\Model\RefundTransactionPayload
 
 try {
     $result = $apiInstance->refundTransaction($refund_transaction_payload);

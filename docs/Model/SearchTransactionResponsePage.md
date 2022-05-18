@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **number** | **int** |  | [optional]
 **number_of_elements** | **int** |  | [optional]
 **size** | **int** |  | [optional]
-**sort** | [**\OpenAPI\Client\Model\SearchTransactionResponsePageSort**](SearchTransactionResponsePageSort.md) |  | [optional]
+**sort** | [**\ClearentTransactionsApi\Model\SearchTransactionResponsePageSort**](SearchTransactionResponsePageSort.md) |  | [optional]
 **total_elements** | **int** |  | [optional]
 **total_pages** | **int** |  | [optional]
 

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ClearentTransactionsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace ClearentTransactionsApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \ClearentTransactionsApi\ObjectSerializer;
 
 /**
  * TransactionModel Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ClearentTransactionsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -61,38 +61,38 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'amount' => 'string',
         'authorization_code' => 'string',
-        'avs_result_code' => '\OpenAPI\Client\Model\AvsResultCode',
+        'avs_result_code' => '\ClearentTransactionsApi\Model\AvsResultCode',
         'avs_result_code_description' => 'string',
         'avs_street' => 'string',
         'avs_zip' => 'string',
         'base_amount' => 'string',
         'batch_string_id' => 'string',
-        'billing' => '\OpenAPI\Client\Model\Address',
-        'billing_is_shipping' => '\OpenAPI\Client\Model\BillingIsShipping',
+        'billing' => '\ClearentTransactionsApi\Model\Address',
+        'billing_is_shipping' => '\ClearentTransactionsApi\Model\BillingIsShipping',
         'card' => 'string',
-        'card_type' => '\OpenAPI\Client\Model\CardType',
+        'card_type' => '\ClearentTransactionsApi\Model\CardType',
         'cash_back_amount' => 'string',
         'check_field_duplicate' => 'bool',
         'client_ip' => 'string',
         'comments' => 'string',
-        'contactless' => '\OpenAPI\Client\Model\Contactless',
-        'contactless_device' => '\OpenAPI\Client\Model\ContactlessDevice',
+        'contactless' => '\ClearentTransactionsApi\Model\Contactless',
+        'contactless_device' => '\ClearentTransactionsApi\Model\ContactlessDevice',
         'created' => 'string',
         'csc' => 'string',
-        'csc_result_code' => '\OpenAPI\Client\Model\CscResultCode',
+        'csc_result_code' => '\ClearentTransactionsApi\Model\CscResultCode',
         'csc_result_code_description' => 'string',
         'customer_first_name' => 'string',
         'customer_id' => 'string',
         'customer_last_name' => 'string',
-        'cvm' => '\OpenAPI\Client\Model\Cvm',
+        'cvm' => '\ClearentTransactionsApi\Model\Cvm',
         'description' => 'string',
         'display_message' => 'string',
-        'ebt_additional_amounts' => '\OpenAPI\Client\Model\EBTAdditionalAmount[]',
+        'ebt_additional_amounts' => '\ClearentTransactionsApi\Model\EBTAdditionalAmount[]',
         'email_address' => 'string',
-        'emv' => '\OpenAPI\Client\Model\EMV',
+        'emv' => '\ClearentTransactionsApi\Model\EMV',
         'emv_data' => 'string',
         'emv_data_response' => 'string',
-        'emv_entry_method' => '\OpenAPI\Client\Model\EmvEntryMethod',
+        'emv_entry_method' => '\ClearentTransactionsApi\Model\EmvEntryMethod',
         'entry_method' => 'string',
         'exp_date' => 'string',
         'first_recurring_transaction' => 'string',
@@ -100,25 +100,25 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
         'invoice' => 'string',
         'key_serial_number' => 'string',
         'last_four' => 'string',
-        'level3' => '\OpenAPI\Client\Model\ClearentLevel3',
+        'level3' => '\ClearentTransactionsApi\Model\ClearentLevel3',
         'merchant_id' => 'string',
         'order_id' => 'string',
         'original_amount' => 'string',
         'partial_approved' => 'bool',
         'partial_authorization' => 'bool',
-        'pending' => '\OpenAPI\Client\Model\Pending',
+        'pending' => '\ClearentTransactionsApi\Model\Pending',
         'plan_name' => 'string',
-        'platform_fees' => '\OpenAPI\Client\Model\PlatformFee[]',
+        'platform_fees' => '\ClearentTransactionsApi\Model\PlatformFee[]',
         'purchase_order' => 'string',
         'ref_id' => 'string',
-        'result' => '\OpenAPI\Client\Model\Result',
+        'result' => '\ClearentTransactionsApi\Model\Result',
         'result_code' => 'string',
         'sales_tax_amount' => 'string',
-        'sales_tax_type' => '\OpenAPI\Client\Model\SalesTaxType',
+        'sales_tax_type' => '\ClearentTransactionsApi\Model\SalesTaxType',
         'server_id' => 'string',
         'service_fee' => 'string',
-        'settled' => '\OpenAPI\Client\Model\Settled',
-        'shipping' => '\OpenAPI\Client\Model\Address',
+        'settled' => '\ClearentTransactionsApi\Model\Settled',
+        'shipping' => '\ClearentTransactionsApi\Model\Address',
         'signature_base_64_image' => 'string',
         'software_type' => 'string',
         'software_type_version' => 'string',
@@ -129,9 +129,9 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
         'tip_adjusted_amount' => 'string',
         'tip_amount' => 'string',
         'token_description' => 'string',
-        'type' => '\OpenAPI\Client\Model\Type',
-        'voided' => '\OpenAPI\Client\Model\Voided',
-        'voided_auth' => '\OpenAPI\Client\Model\VoidedAuth',
+        'type' => '\ClearentTransactionsApi\Model\Type',
+        'voided' => '\ClearentTransactionsApi\Model\Voided',
+        'voided_auth' => '\ClearentTransactionsApi\Model\VoidedAuth',
         'voucher_approval_code' => 'string',
         'voucher_serial_number' => 'string'
     ];
@@ -704,7 +704,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets avs_result_code
      *
-     * @return \OpenAPI\Client\Model\AvsResultCode|null
+     * @return \ClearentTransactionsApi\Model\AvsResultCode|null
      */
     public function getAvsResultCode()
     {
@@ -714,7 +714,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets avs_result_code
      *
-     * @param \OpenAPI\Client\Model\AvsResultCode|null $avs_result_code avs_result_code
+     * @param \ClearentTransactionsApi\Model\AvsResultCode|null $avs_result_code avs_result_code
      *
      * @return self
      */
@@ -848,7 +848,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets billing
      *
-     * @return \OpenAPI\Client\Model\Address|null
+     * @return \ClearentTransactionsApi\Model\Address|null
      */
     public function getBilling()
     {
@@ -858,7 +858,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets billing
      *
-     * @param \OpenAPI\Client\Model\Address|null $billing billing
+     * @param \ClearentTransactionsApi\Model\Address|null $billing billing
      *
      * @return self
      */
@@ -872,7 +872,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets billing_is_shipping
      *
-     * @return \OpenAPI\Client\Model\BillingIsShipping|null
+     * @return \ClearentTransactionsApi\Model\BillingIsShipping|null
      */
     public function getBillingIsShipping()
     {
@@ -882,7 +882,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets billing_is_shipping
      *
-     * @param \OpenAPI\Client\Model\BillingIsShipping|null $billing_is_shipping billing_is_shipping
+     * @param \ClearentTransactionsApi\Model\BillingIsShipping|null $billing_is_shipping billing_is_shipping
      *
      * @return self
      */
@@ -920,7 +920,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets card_type
      *
-     * @return \OpenAPI\Client\Model\CardType|null
+     * @return \ClearentTransactionsApi\Model\CardType|null
      */
     public function getCardType()
     {
@@ -930,7 +930,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets card_type
      *
-     * @param \OpenAPI\Client\Model\CardType|null $card_type card_type
+     * @param \ClearentTransactionsApi\Model\CardType|null $card_type card_type
      *
      * @return self
      */
@@ -1040,7 +1040,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets contactless
      *
-     * @return \OpenAPI\Client\Model\Contactless|null
+     * @return \ClearentTransactionsApi\Model\Contactless|null
      */
     public function getContactless()
     {
@@ -1050,7 +1050,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets contactless
      *
-     * @param \OpenAPI\Client\Model\Contactless|null $contactless contactless
+     * @param \ClearentTransactionsApi\Model\Contactless|null $contactless contactless
      *
      * @return self
      */
@@ -1064,7 +1064,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets contactless_device
      *
-     * @return \OpenAPI\Client\Model\ContactlessDevice|null
+     * @return \ClearentTransactionsApi\Model\ContactlessDevice|null
      */
     public function getContactlessDevice()
     {
@@ -1074,7 +1074,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets contactless_device
      *
-     * @param \OpenAPI\Client\Model\ContactlessDevice|null $contactless_device contactless_device
+     * @param \ClearentTransactionsApi\Model\ContactlessDevice|null $contactless_device contactless_device
      *
      * @return self
      */
@@ -1136,7 +1136,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets csc_result_code
      *
-     * @return \OpenAPI\Client\Model\CscResultCode|null
+     * @return \ClearentTransactionsApi\Model\CscResultCode|null
      */
     public function getCscResultCode()
     {
@@ -1146,7 +1146,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets csc_result_code
      *
-     * @param \OpenAPI\Client\Model\CscResultCode|null $csc_result_code csc_result_code
+     * @param \ClearentTransactionsApi\Model\CscResultCode|null $csc_result_code csc_result_code
      *
      * @return self
      */
@@ -1256,7 +1256,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets cvm
      *
-     * @return \OpenAPI\Client\Model\Cvm|null
+     * @return \ClearentTransactionsApi\Model\Cvm|null
      */
     public function getCvm()
     {
@@ -1266,7 +1266,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets cvm
      *
-     * @param \OpenAPI\Client\Model\Cvm|null $cvm cvm
+     * @param \ClearentTransactionsApi\Model\Cvm|null $cvm cvm
      *
      * @return self
      */
@@ -1328,7 +1328,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets ebt_additional_amounts
      *
-     * @return \OpenAPI\Client\Model\EBTAdditionalAmount[]|null
+     * @return \ClearentTransactionsApi\Model\EBTAdditionalAmount[]|null
      */
     public function getEbtAdditionalAmounts()
     {
@@ -1338,7 +1338,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets ebt_additional_amounts
      *
-     * @param \OpenAPI\Client\Model\EBTAdditionalAmount[]|null $ebt_additional_amounts When the transaction is an EBT it will contain additional amount information.
+     * @param \ClearentTransactionsApi\Model\EBTAdditionalAmount[]|null $ebt_additional_amounts When the transaction is an EBT it will contain additional amount information.
      *
      * @return self
      */
@@ -1376,7 +1376,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets emv
      *
-     * @return \OpenAPI\Client\Model\EMV|null
+     * @return \ClearentTransactionsApi\Model\EMV|null
      */
     public function getEmv()
     {
@@ -1386,7 +1386,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets emv
      *
-     * @param \OpenAPI\Client\Model\EMV|null $emv emv
+     * @param \ClearentTransactionsApi\Model\EMV|null $emv emv
      *
      * @return self
      */
@@ -1448,7 +1448,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets emv_entry_method
      *
-     * @return \OpenAPI\Client\Model\EmvEntryMethod|null
+     * @return \ClearentTransactionsApi\Model\EmvEntryMethod|null
      */
     public function getEmvEntryMethod()
     {
@@ -1458,7 +1458,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets emv_entry_method
      *
-     * @param \OpenAPI\Client\Model\EmvEntryMethod|null $emv_entry_method emv_entry_method
+     * @param \ClearentTransactionsApi\Model\EmvEntryMethod|null $emv_entry_method emv_entry_method
      *
      * @return self
      */
@@ -1640,7 +1640,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets level3
      *
-     * @return \OpenAPI\Client\Model\ClearentLevel3|null
+     * @return \ClearentTransactionsApi\Model\ClearentLevel3|null
      */
     public function getLevel3()
     {
@@ -1650,7 +1650,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets level3
      *
-     * @param \OpenAPI\Client\Model\ClearentLevel3|null $level3 level3
+     * @param \ClearentTransactionsApi\Model\ClearentLevel3|null $level3 level3
      *
      * @return self
      */
@@ -1784,7 +1784,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets pending
      *
-     * @return \OpenAPI\Client\Model\Pending|null
+     * @return \ClearentTransactionsApi\Model\Pending|null
      */
     public function getPending()
     {
@@ -1794,7 +1794,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets pending
      *
-     * @param \OpenAPI\Client\Model\Pending|null $pending pending
+     * @param \ClearentTransactionsApi\Model\Pending|null $pending pending
      *
      * @return self
      */
@@ -1832,7 +1832,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets platform_fees
      *
-     * @return \OpenAPI\Client\Model\PlatformFee[]|null
+     * @return \ClearentTransactionsApi\Model\PlatformFee[]|null
      */
     public function getPlatformFees()
     {
@@ -1842,7 +1842,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets platform_fees
      *
-     * @param \OpenAPI\Client\Model\PlatformFee[]|null $platform_fees True if the batch was settled.
+     * @param \ClearentTransactionsApi\Model\PlatformFee[]|null $platform_fees True if the batch was settled.
      *
      * @return self
      */
@@ -1908,7 +1908,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets result
      *
-     * @return \OpenAPI\Client\Model\Result|null
+     * @return \ClearentTransactionsApi\Model\Result|null
      */
     public function getResult()
     {
@@ -1918,7 +1918,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets result
      *
-     * @param \OpenAPI\Client\Model\Result|null $result result
+     * @param \ClearentTransactionsApi\Model\Result|null $result result
      *
      * @return self
      */
@@ -1980,7 +1980,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets sales_tax_type
      *
-     * @return \OpenAPI\Client\Model\SalesTaxType|null
+     * @return \ClearentTransactionsApi\Model\SalesTaxType|null
      */
     public function getSalesTaxType()
     {
@@ -1990,7 +1990,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets sales_tax_type
      *
-     * @param \OpenAPI\Client\Model\SalesTaxType|null $sales_tax_type sales_tax_type
+     * @param \ClearentTransactionsApi\Model\SalesTaxType|null $sales_tax_type sales_tax_type
      *
      * @return self
      */
@@ -2052,7 +2052,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets settled
      *
-     * @return \OpenAPI\Client\Model\Settled|null
+     * @return \ClearentTransactionsApi\Model\Settled|null
      */
     public function getSettled()
     {
@@ -2062,7 +2062,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets settled
      *
-     * @param \OpenAPI\Client\Model\Settled|null $settled settled
+     * @param \ClearentTransactionsApi\Model\Settled|null $settled settled
      *
      * @return self
      */
@@ -2076,7 +2076,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets shipping
      *
-     * @return \OpenAPI\Client\Model\Address|null
+     * @return \ClearentTransactionsApi\Model\Address|null
      */
     public function getShipping()
     {
@@ -2086,7 +2086,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets shipping
      *
-     * @param \OpenAPI\Client\Model\Address|null $shipping shipping
+     * @param \ClearentTransactionsApi\Model\Address|null $shipping shipping
      *
      * @return self
      */
@@ -2340,7 +2340,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets type
      *
-     * @return \OpenAPI\Client\Model\Type|null
+     * @return \ClearentTransactionsApi\Model\Type|null
      */
     public function getType()
     {
@@ -2350,7 +2350,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets type
      *
-     * @param \OpenAPI\Client\Model\Type|null $type type
+     * @param \ClearentTransactionsApi\Model\Type|null $type type
      *
      * @return self
      */
@@ -2364,7 +2364,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets voided
      *
-     * @return \OpenAPI\Client\Model\Voided|null
+     * @return \ClearentTransactionsApi\Model\Voided|null
      */
     public function getVoided()
     {
@@ -2374,7 +2374,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets voided
      *
-     * @param \OpenAPI\Client\Model\Voided|null $voided voided
+     * @param \ClearentTransactionsApi\Model\Voided|null $voided voided
      *
      * @return self
      */
@@ -2388,7 +2388,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets voided_auth
      *
-     * @return \OpenAPI\Client\Model\VoidedAuth|null
+     * @return \ClearentTransactionsApi\Model\VoidedAuth|null
      */
     public function getVoidedAuth()
     {
@@ -2398,7 +2398,7 @@ class TransactionModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets voided_auth
      *
-     * @param \OpenAPI\Client\Model\VoidedAuth|null $voided_auth voided_auth
+     * @param \ClearentTransactionsApi\Model\VoidedAuth|null $voided_auth voided_auth
      *
      * @return self
      */

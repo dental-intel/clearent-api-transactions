@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ClearentTransactionsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace ClearentTransactionsApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \ClearentTransactionsApi\ObjectSerializer;
 
 /**
  * PlatformFee Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ClearentTransactionsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -59,7 +59,7 @@ class PlatformFee implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'fee_name' => '\OpenAPI\Client\Model\FeeName'
+        'fee_name' => '\ClearentTransactionsApi\Model\FeeName'
     ];
 
     /**
@@ -208,7 +208,7 @@ class PlatformFee implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets fee_name
      *
-     * @return \OpenAPI\Client\Model\FeeName|null
+     * @return \ClearentTransactionsApi\Model\FeeName|null
      */
     public function getFeeName()
     {
@@ -218,7 +218,7 @@ class PlatformFee implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets fee_name
      *
-     * @param \OpenAPI\Client\Model\FeeName|null $fee_name fee_name
+     * @param \ClearentTransactionsApi\Model\FeeName|null $fee_name fee_name
      *
      * @return self
      */

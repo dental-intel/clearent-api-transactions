@@ -12,6 +12,7 @@ generate:
 		--git-host github.com \
 		--git-repo-id clearent-api-transactions \
 		--git-user-id dental-intel \
+		--invoker-package ClearentTransactionsApi \
 		--package-name ClearentTransactionsApi
 
 .PHONY: validate

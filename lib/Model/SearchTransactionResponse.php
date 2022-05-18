@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ClearentTransactionsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace ClearentTransactionsApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \ClearentTransactionsApi\ObjectSerializer;
 
 /**
  * SearchTransactionResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ClearentTransactionsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -61,9 +61,9 @@ class SearchTransactionResponse implements ModelInterface, ArrayAccess, \JsonSer
     protected static $openAPITypes = [
         'code' => 'string',
         'exchange_id' => 'string',
-        'links' => '\OpenAPI\Client\Model\SearchTransactionResponseLinksInner[]',
-        'page' => '\OpenAPI\Client\Model\SearchTransactionResponsePage',
-        'payload' => '\OpenAPI\Client\Model\SearchTransactionResponsePayload',
+        'links' => '\ClearentTransactionsApi\Model\SearchTransactionResponseLinksInner[]',
+        'page' => '\ClearentTransactionsApi\Model\SearchTransactionResponsePage',
+        'payload' => '\ClearentTransactionsApi\Model\SearchTransactionResponsePayload',
         'status' => 'string'
     ];
 
@@ -294,7 +294,7 @@ class SearchTransactionResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets links
      *
-     * @return \OpenAPI\Client\Model\SearchTransactionResponseLinksInner[]|null
+     * @return \ClearentTransactionsApi\Model\SearchTransactionResponseLinksInner[]|null
      */
     public function getLinks()
     {
@@ -304,7 +304,7 @@ class SearchTransactionResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets links
      *
-     * @param \OpenAPI\Client\Model\SearchTransactionResponseLinksInner[]|null $links links
+     * @param \ClearentTransactionsApi\Model\SearchTransactionResponseLinksInner[]|null $links links
      *
      * @return self
      */
@@ -318,7 +318,7 @@ class SearchTransactionResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets page
      *
-     * @return \OpenAPI\Client\Model\SearchTransactionResponsePage|null
+     * @return \ClearentTransactionsApi\Model\SearchTransactionResponsePage|null
      */
     public function getPage()
     {
@@ -328,7 +328,7 @@ class SearchTransactionResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets page
      *
-     * @param \OpenAPI\Client\Model\SearchTransactionResponsePage|null $page page
+     * @param \ClearentTransactionsApi\Model\SearchTransactionResponsePage|null $page page
      *
      * @return self
      */
@@ -342,7 +342,7 @@ class SearchTransactionResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets payload
      *
-     * @return \OpenAPI\Client\Model\SearchTransactionResponsePayload|null
+     * @return \ClearentTransactionsApi\Model\SearchTransactionResponsePayload|null
      */
     public function getPayload()
     {
@@ -352,7 +352,7 @@ class SearchTransactionResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets payload
      *
-     * @param \OpenAPI\Client\Model\SearchTransactionResponsePayload|null $payload payload
+     * @param \ClearentTransactionsApi\Model\SearchTransactionResponsePayload|null $payload payload
      *
      * @return self
      */

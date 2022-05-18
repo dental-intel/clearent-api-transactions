@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ClearentTransactionsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace ClearentTransactionsApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \ClearentTransactionsApi\ObjectSerializer;
 
 /**
  * SingleTransactionResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ClearentTransactionsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -61,8 +61,8 @@ class SingleTransactionResponse implements ModelInterface, ArrayAccess, \JsonSer
     protected static $openAPITypes = [
         'code' => 'string',
         'exchange_id' => 'string',
-        'links' => '\OpenAPI\Client\Model\SearchTransactionResponseLinksInner[]',
-        'payload' => '\OpenAPI\Client\Model\SingleTransactionResponsePayload',
+        'links' => '\ClearentTransactionsApi\Model\SearchTransactionResponseLinksInner[]',
+        'payload' => '\ClearentTransactionsApi\Model\SingleTransactionResponsePayload',
         'status' => 'string'
     ];
 
@@ -288,7 +288,7 @@ class SingleTransactionResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets links
      *
-     * @return \OpenAPI\Client\Model\SearchTransactionResponseLinksInner[]|null
+     * @return \ClearentTransactionsApi\Model\SearchTransactionResponseLinksInner[]|null
      */
     public function getLinks()
     {
@@ -298,7 +298,7 @@ class SingleTransactionResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets links
      *
-     * @param \OpenAPI\Client\Model\SearchTransactionResponseLinksInner[]|null $links links
+     * @param \ClearentTransactionsApi\Model\SearchTransactionResponseLinksInner[]|null $links links
      *
      * @return self
      */
@@ -312,7 +312,7 @@ class SingleTransactionResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets payload
      *
-     * @return \OpenAPI\Client\Model\SingleTransactionResponsePayload|null
+     * @return \ClearentTransactionsApi\Model\SingleTransactionResponsePayload|null
      */
     public function getPayload()
     {
@@ -322,7 +322,7 @@ class SingleTransactionResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets payload
      *
-     * @param \OpenAPI\Client\Model\SingleTransactionResponsePayload|null $payload payload
+     * @param \ClearentTransactionsApi\Model\SingleTransactionResponsePayload|null $payload payload
      *
      * @return self
      */

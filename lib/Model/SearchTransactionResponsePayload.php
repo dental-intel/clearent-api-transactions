@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ClearentTransactionsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace ClearentTransactionsApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \ClearentTransactionsApi\ObjectSerializer;
 
 /**
  * SearchTransactionResponsePayload Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ClearentTransactionsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -60,7 +60,7 @@ class SearchTransactionResponsePayload implements ModelInterface, ArrayAccess, \
       */
     protected static $openAPITypes = [
         'payload_type' => 'string',
-        'transactions' => '\OpenAPI\Client\Model\SearchTransactionResponsePayloadTransactions'
+        'transactions' => '\ClearentTransactionsApi\Model\SearchTransactionResponsePayloadTransactions'
     ];
 
     /**
@@ -238,7 +238,7 @@ class SearchTransactionResponsePayload implements ModelInterface, ArrayAccess, \
     /**
      * Gets transactions
      *
-     * @return \OpenAPI\Client\Model\SearchTransactionResponsePayloadTransactions|null
+     * @return \ClearentTransactionsApi\Model\SearchTransactionResponsePayloadTransactions|null
      */
     public function getTransactions()
     {
@@ -248,7 +248,7 @@ class SearchTransactionResponsePayload implements ModelInterface, ArrayAccess, \
     /**
      * Sets transactions
      *
-     * @param \OpenAPI\Client\Model\SearchTransactionResponsePayloadTransactions|null $transactions transactions
+     * @param \ClearentTransactionsApi\Model\SearchTransactionResponsePayloadTransactions|null $transactions transactions
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ClearentTransactionsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace ClearentTransactionsApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \ClearentTransactionsApi\ObjectSerializer;
 
 /**
  * SearchTransactionResponsePage Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ClearentTransactionsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -64,7 +64,7 @@ class SearchTransactionResponsePage implements ModelInterface, ArrayAccess, \Jso
         'number' => 'int',
         'number_of_elements' => 'int',
         'size' => 'int',
-        'sort' => '\OpenAPI\Client\Model\SearchTransactionResponsePageSort',
+        'sort' => '\ClearentTransactionsApi\Model\SearchTransactionResponsePageSort',
         'total_elements' => 'int',
         'total_pages' => 'int'
     ];
@@ -370,7 +370,7 @@ class SearchTransactionResponsePage implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets sort
      *
-     * @return \OpenAPI\Client\Model\SearchTransactionResponsePageSort|null
+     * @return \ClearentTransactionsApi\Model\SearchTransactionResponsePageSort|null
      */
     public function getSort()
     {
@@ -380,7 +380,7 @@ class SearchTransactionResponsePage implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets sort
      *
-     * @param \OpenAPI\Client\Model\SearchTransactionResponsePageSort|null $sort sort
+     * @param \ClearentTransactionsApi\Model\SearchTransactionResponsePageSort|null $sort sort
      *
      * @return self
      */
