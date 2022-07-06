@@ -1187,7 +1187,7 @@ paths:
     post:
       operationId: mobileSaleTransaction
       parameters:
-        - $ref: '#components/parameters/mobileJWTParam'
+        - $ref: '#/components/parameters/mobileJWTParam'
       requestBody:
         content:
           application/json:

@@ -118,30 +118,32 @@ class TransactionsApi
     /**
      * Operation mobileSaleTransaction
      *
+     * @param  string $mobilejwt mobilejwt (optional)
      * @param  \ClearentTransactionsApi\Model\SaleTransactionPayload $sale_transaction_payload sale_transaction_payload (optional)
      *
      * @throws \ClearentTransactionsApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \ClearentTransactionsApi\Model\SingleTransactionResponse
      */
-    public function mobileSaleTransaction($sale_transaction_payload = null)
+    public function mobileSaleTransaction($mobilejwt = null, $sale_transaction_payload = null)
     {
-        list($response) = $this->mobileSaleTransactionWithHttpInfo($sale_transaction_payload);
+        list($response) = $this->mobileSaleTransactionWithHttpInfo($mobilejwt, $sale_transaction_payload);
         return $response;
     }
 
     /**
      * Operation mobileSaleTransactionWithHttpInfo
      *
+     * @param  string $mobilejwt (optional)
      * @param  \ClearentTransactionsApi\Model\SaleTransactionPayload $sale_transaction_payload (optional)
      *
      * @throws \ClearentTransactionsApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \ClearentTransactionsApi\Model\SingleTransactionResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function mobileSaleTransactionWithHttpInfo($sale_transaction_payload = null)
+    public function mobileSaleTransactionWithHttpInfo($mobilejwt = null, $sale_transaction_payload = null)
     {
-        $request = $this->mobileSaleTransactionRequest($sale_transaction_payload);
+        $request = $this->mobileSaleTransactionRequest($mobilejwt, $sale_transaction_payload);
 
         try {
             $options = $this->createHttpClientOption();
@@ -230,14 +232,15 @@ class TransactionsApi
     /**
      * Operation mobileSaleTransactionAsync
      *
+     * @param  string $mobilejwt (optional)
      * @param  \ClearentTransactionsApi\Model\SaleTransactionPayload $sale_transaction_payload (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function mobileSaleTransactionAsync($sale_transaction_payload = null)
+    public function mobileSaleTransactionAsync($mobilejwt = null, $sale_transaction_payload = null)
     {
-        return $this->mobileSaleTransactionAsyncWithHttpInfo($sale_transaction_payload)
+        return $this->mobileSaleTransactionAsyncWithHttpInfo($mobilejwt, $sale_transaction_payload)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -248,15 +251,16 @@ class TransactionsApi
     /**
      * Operation mobileSaleTransactionAsyncWithHttpInfo
      *
+     * @param  string $mobilejwt (optional)
      * @param  \ClearentTransactionsApi\Model\SaleTransactionPayload $sale_transaction_payload (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function mobileSaleTransactionAsyncWithHttpInfo($sale_transaction_payload = null)
+    public function mobileSaleTransactionAsyncWithHttpInfo($mobilejwt = null, $sale_transaction_payload = null)
     {
         $returnType = '\ClearentTransactionsApi\Model\SingleTransactionResponse';
-        $request = $this->mobileSaleTransactionRequest($sale_transaction_payload);
+        $request = $this->mobileSaleTransactionRequest($mobilejwt, $sale_transaction_payload);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -297,12 +301,13 @@ class TransactionsApi
     /**
      * Create request for operation 'mobileSaleTransaction'
      *
+     * @param  string $mobilejwt (optional)
      * @param  \ClearentTransactionsApi\Model\SaleTransactionPayload $sale_transaction_payload (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    public function mobileSaleTransactionRequest($sale_transaction_payload = null)
+    public function mobileSaleTransactionRequest($mobilejwt = null, $sale_transaction_payload = null)
     {
 
         $resourcePath = '/rest/v2/mobile/transactions/sale';
@@ -313,6 +318,10 @@ class TransactionsApi
         $multipart = false;
 
 
+        // header params
+        if ($mobilejwt !== null) {
+            $headerParams['mobilejwt'] = ObjectSerializer::toHeaderValue($mobilejwt);
+        }
 
 
 

@@ -13,7 +13,7 @@ Method | HTTP request | Description
 ## `mobileSaleTransaction()`
 
 ```php
-mobileSaleTransaction($sale_transaction_payload): \ClearentTransactionsApi\Model\SingleTransactionResponse
+mobileSaleTransaction($mobilejwt, $sale_transaction_payload): \ClearentTransactionsApi\Model\SingleTransactionResponse
 ```
 
 
@@ -37,10 +37,11 @@ $apiInstance = new ClearentTransactionsApi\Api\TransactionsApi(
     new GuzzleHttp\Client(),
     $config
 );
+$mobilejwt = jwt; // string
 $sale_transaction_payload = new \ClearentTransactionsApi\Model\SaleTransactionPayload(); // \ClearentTransactionsApi\Model\SaleTransactionPayload
 
 try {
-    $result = $apiInstance->mobileSaleTransaction($sale_transaction_payload);
+    $result = $apiInstance->mobileSaleTransaction($mobilejwt, $sale_transaction_payload);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling TransactionsApi->mobileSaleTransaction: ', $e->getMessage(), PHP_EOL;
@@ -51,6 +52,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **mobilejwt** | **string**|  | [optional]
  **sale_transaction_payload** | [**\ClearentTransactionsApi\Model\SaleTransactionPayload**](../Model/SaleTransactionPayload.md)|  | [optional]
 
 ### Return type
