@@ -4,10 +4,71 @@ All URIs are relative to https://gateway-sb.clearent.net.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**mobileSaleTransaction()**](TransactionsApi.md#mobileSaleTransaction) | **POST** /rest/v2/mobile/transactions/sale | 
 [**refundTransaction()**](TransactionsApi.md#refundTransaction) | **POST** /rest/v2/transactions/refund | 
 [**saleTransaction()**](TransactionsApi.md#saleTransaction) | **POST** /rest/v2/transactions/sale | 
 [**searchTransactions()**](TransactionsApi.md#searchTransactions) | **GET** /rest/v2/transactions | 
 
+
+## `mobileSaleTransaction()`
+
+```php
+mobileSaleTransaction($sale_transaction_payload): \ClearentTransactionsApi\Model\SingleTransactionResponse
+```
+
+
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+// Configure API key authorization: ApiKeyAuth
+$config = ClearentTransactionsApi\Configuration::getDefaultConfiguration()->setApiKey('api-key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = ClearentTransactionsApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api-key', 'Bearer');
+
+
+$apiInstance = new ClearentTransactionsApi\Api\TransactionsApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$sale_transaction_payload = new \ClearentTransactionsApi\Model\SaleTransactionPayload(); // \ClearentTransactionsApi\Model\SaleTransactionPayload
+
+try {
+    $result = $apiInstance->mobileSaleTransaction($sale_transaction_payload);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling TransactionsApi->mobileSaleTransaction: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **sale_transaction_payload** | [**\ClearentTransactionsApi\Model\SaleTransactionPayload**](../Model/SaleTransactionPayload.md)|  | [optional]
+
+### Return type
+
+[**\ClearentTransactionsApi\Model\SingleTransactionResponse**](../Model/SingleTransactionResponse.md)
+
+### Authorization
+
+[ApiKeyAuth](../../README.md#ApiKeyAuth)
+
+### HTTP request headers
+
+- **Content-Type**: `application/json`
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
 
 ## `refundTransaction()`
 
