@@ -446,19 +446,10 @@ class RefundTransactionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     {
         $invalidProperties = [];
 
-        if ($this->container['amount'] === null) {
-            $invalidProperties[] = "'amount' can't be null";
-        }
-        if ($this->container['id'] === null) {
-            $invalidProperties[] = "'id' can't be null";
-        }
         if (!is_null($this->container['platform_fees']) && (count($this->container['platform_fees']) > 2)) {
             $invalidProperties[] = "invalid value for 'platform_fees', number of items must be less than or equal to 2.";
         }
 
-        if ($this->container['type'] === null) {
-            $invalidProperties[] = "'type' can't be null";
-        }
         return $invalidProperties;
     }
 
@@ -477,7 +468,7 @@ class RefundTransactionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets amount
      *
-     * @return string
+     * @return string|null
      */
     public function getAmount()
     {
@@ -487,7 +478,7 @@ class RefundTransactionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets amount
      *
-     * @param string $amount The transaction amount.
+     * @param string|null $amount The transaction amount.
      *
      * @return self
      */
@@ -1029,7 +1020,7 @@ class RefundTransactionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets id
      *
-     * @return string
+     * @return string|null
      */
     public function getId()
     {
@@ -1039,7 +1030,7 @@ class RefundTransactionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets id
      *
-     * @param string $id The ID of the transaction.
+     * @param string|null $id The ID of the transaction.
      *
      * @return self
      */
@@ -1465,7 +1456,7 @@ class RefundTransactionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets type
      *
-     * @return \ClearentTransactionsApi\Model\TypeRefundTransaction
+     * @return \ClearentTransactionsApi\Model\TypeRefundTransaction|null
      */
     public function getType()
     {
@@ -1475,7 +1466,7 @@ class RefundTransactionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets type
      *
-     * @param \ClearentTransactionsApi\Model\TypeRefundTransaction $type type
+     * @param \ClearentTransactionsApi\Model\TypeRefundTransaction|null $type type
      *
      * @return self
      */

@@ -65,8 +65,8 @@ components:
     mobileJWTParam:
       in: header
       name: mobilejwt
-      required: true
       schema:
+        example: jwt
         type: string
     order-idParam:
       in: query
@@ -288,10 +288,6 @@ components:
           $ref: '#/components/schemas/voucher-approval-code'
         voucher-serial-number:
           $ref: '#/components/schemas/voucher-serial-number'
-      required:
-        - amount
-        - id
-        - type
       type: object
     SaleTransactionPayload:
       additionalProperties: false
