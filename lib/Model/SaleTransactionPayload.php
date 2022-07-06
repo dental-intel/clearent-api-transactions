@@ -440,22 +440,10 @@ class SaleTransactionPayload implements ModelInterface, ArrayAccess, \JsonSerial
     {
         $invalidProperties = [];
 
-        if ($this->container['amount'] === null) {
-            $invalidProperties[] = "'amount' can't be null";
-        }
-        if ($this->container['card'] === null) {
-            $invalidProperties[] = "'card' can't be null";
-        }
-        if ($this->container['exp_date'] === null) {
-            $invalidProperties[] = "'exp_date' can't be null";
-        }
         if (!is_null($this->container['platform_fees']) && (count($this->container['platform_fees']) > 2)) {
             $invalidProperties[] = "invalid value for 'platform_fees', number of items must be less than or equal to 2.";
         }
 
-        if ($this->container['type'] === null) {
-            $invalidProperties[] = "'type' can't be null";
-        }
         return $invalidProperties;
     }
 
@@ -474,7 +462,7 @@ class SaleTransactionPayload implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets amount
      *
-     * @return string
+     * @return string|null
      */
     public function getAmount()
     {
@@ -484,7 +472,7 @@ class SaleTransactionPayload implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets amount
      *
-     * @param string $amount The transaction amount.
+     * @param string|null $amount The transaction amount.
      *
      * @return self
      */
@@ -546,7 +534,7 @@ class SaleTransactionPayload implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets card
      *
-     * @return string
+     * @return string|null
      */
     public function getCard()
     {
@@ -556,7 +544,7 @@ class SaleTransactionPayload implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets card
      *
-     * @param string $card The credit card number or token.
+     * @param string|null $card The credit card number or token.
      *
      * @return self
      */
@@ -1002,7 +990,7 @@ class SaleTransactionPayload implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets exp_date
      *
-     * @return string
+     * @return string|null
      */
     public function getExpDate()
     {
@@ -1012,7 +1000,7 @@ class SaleTransactionPayload implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets exp_date
      *
-     * @param string $exp_date The expiration date of the credit card in MMYY format.
+     * @param string|null $exp_date The expiration date of the credit card in MMYY format.
      *
      * @return self
      */
@@ -1438,7 +1426,7 @@ class SaleTransactionPayload implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets type
      *
-     * @return \ClearentTransactionsApi\Model\TypeSaleTransaction
+     * @return \ClearentTransactionsApi\Model\TypeSaleTransaction|null
      */
     public function getType()
     {
@@ -1448,7 +1436,7 @@ class SaleTransactionPayload implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets type
      *
-     * @param \ClearentTransactionsApi\Model\TypeSaleTransaction $type type
+     * @param \ClearentTransactionsApi\Model\TypeSaleTransaction|null $type type
      *
      * @return self
      */

@@ -4,10 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**amount** | **string** | The transaction amount. |
+**amount** | **string** | The transaction amount. | [optional]
 **billing** | [**\ClearentTransactionsApi\Model\Address**](Address.md) |  | [optional]
 **billing_is_shipping** | [**\ClearentTransactionsApi\Model\BillingIsShipping**](BillingIsShipping.md) |  | [optional]
-**card** | **string** | The credit card number or token. |
+**card** | **string** | The credit card number or token. | [optional]
 **card_inquiry** | **bool** | False if you would not like to run a card inquiry automatically. | [optional] [default to true]
 **cash_back_amount** | **string** | The cash back amount when using EBT cash benefits. | [optional]
 **check_field** | [**\ClearentTransactionsApi\Model\CheckField**](CheckField.md) |  | [optional]
@@ -26,7 +26,7 @@ Name | Type | Description | Notes
 **emv_data** | **string** | The EMV data passed from the terminal. | [optional]
 **emv_entry_method** | [**\ClearentTransactionsApi\Model\EmvEntryMethod**](EmvEntryMethod.md) |  | [optional]
 **encrypted_track_data** | **string** | The Encrypted Track Data can be passed in instead of the card number. This requires &#x60;track-format&#x60; to be set. | [optional]
-**exp_date** | **string** | The expiration date of the credit card in MMYY format. |
+**exp_date** | **string** | The expiration date of the credit card in MMYY format. | [optional]
 **invoice** | **string** | The invoice number. | [optional]
 **is_sp30** | **bool** | True if the terminal being used is a SP30. | [optional]
 **key_serial_number** | **string** | The serial number of the encrypted device. | [optional]
@@ -44,7 +44,7 @@ Name | Type | Description | Notes
 **software_type_version** | **string** | Optional field to help with troubleshooting. | [optional]
 **tip_amount** | **string** | The tip amount for the transaction. | [optional]
 **token_description** | **string** | The description of the token. | [optional]
-**type** | [**\ClearentTransactionsApi\Model\TypeSaleTransaction**](TypeSaleTransaction.md) |  |
+**type** | [**\ClearentTransactionsApi\Model\TypeSaleTransaction**](TypeSaleTransaction.md) |  | [optional]
 **voucher_approval_code** | **string** |  | [optional]
 **voucher_serial_number** | **string** |  | [optional]
 

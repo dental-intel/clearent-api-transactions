@@ -382,11 +382,6 @@ components:
           $ref: '#/components/schemas/voucher-approval-code'
         voucher-serial-number:
           $ref: '#/components/schemas/voucher-serial-number'
-      required:
-        - amount
-        - card
-        - exp-date
-        - type
       type: object
     SearchTransactionResponse:
       additionalProperties: false
